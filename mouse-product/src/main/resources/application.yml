@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: mouse-product
+  profiles:
+    active: dev
+  config:
+    import:
+      - optional:nacos:${spring.application.name}-${spring.profiles.active}.yaml
+  zipkin:
+    base-url: http://localhost:9411/
+server:
+  port: 10002
+  servlet:
+    context-path: /mouse-product
