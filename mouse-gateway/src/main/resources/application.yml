@@ -17,6 +17,23 @@ spring:
           uri: lb://mouse-order
           predicates:
             - Path=/mouse-order/order/**
+    sentinel:
+      datasource.ds2.file:
+        file: "classpath: gateway.json"
+        ruleType: gw-flow
+      datasource.ds1.file:
+        file: "classpath: api.json"
+        ruleType: gw-api-group
+      transport:
+        dashboard: localhost:8080
+      filter:
+        enabled: true
+      scg.fallback:
+        mode: response
+        response-status: 444
+        response-body: 1234
+      scg:
+        order: -100
   zipkin:
     base-url: http://localhost:9411/
 server:
