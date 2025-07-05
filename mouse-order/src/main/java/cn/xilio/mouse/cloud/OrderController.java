@@ -13,6 +13,7 @@ public class OrderController {
     @GetMapping("info")
     public String info(){
         String name = productClient.getProductName();
+        int a=1/0;
         return "orderInfo:productName="+name;
     }
     @GetMapping("get")
