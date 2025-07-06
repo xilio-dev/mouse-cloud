@@ -12,4 +12,4 @@ java  -javaagent:/Users/liuxin/Desktop/mouse-cloud-env/apache-skywalking-apm-bin
 - 还可以通过 -Dserver.port=8090 指定Boot应用的端口。
 ![img_3.png](img_3.png)
 注意：一开始的时候打开监控界面是没有数据的，当第一次发起请求的时候会将服务等信息上报到skywalking服务端。
-![img.png](img.png)
+![img_4.png](img_4.png)
