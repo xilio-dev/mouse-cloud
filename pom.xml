@@ -13,6 +13,9 @@
         <module>mouse-order</module>
         <module>mouse-product</module>
         <module>mouse-sentinel</module>
+        <module>mouse-storage</module>
+        <module>mouse-business</module>
+        <module>mouse-account</module>
     </modules>
     <name>${project.artifactId}</name>
     <properties>

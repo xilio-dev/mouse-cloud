@@ -2,6 +2,7 @@ package cn.xilio.mouse.cloud;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController {
     @Autowired
     private ProductClient productClient;
+    @Autowired
+    private OrderService orderService;
     @GetMapping("info")
     public String info(){
         String name = productClient.getProductName();
@@ -19,5 +22,9 @@ public class OrderController {
     @GetMapping("get")
     public String getOrderId(){
         return "order1001";
+    }
+    @GetMapping("create")
+    public void create(String userId, String commodityCode, int orderCount){
+        orderService.create(userId, commodityCode, orderCount);
     }
 }

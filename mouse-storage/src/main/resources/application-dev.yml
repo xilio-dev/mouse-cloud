@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+#      username: #
+#      password: #
+#      discovery:
+#        group: DEFAULT_GROUP
+#        namespace: dev
+#      config:
+#        namespace: dev
+#        group: DEFAULT_GROUP
+
+
