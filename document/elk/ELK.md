@@ -1,6 +1,7 @@
 
 版本说明：
 - ElasticSearch v7.7.28
+- Kibana v7.7.28
 
 ## 资源下载
 - [es v7.17.x版本文档](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/getting-started.html)
