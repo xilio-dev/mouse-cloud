@@ -8,8 +8,8 @@
 - Seata v2.3.0
 - Skywalking v8.7.0
 - RocketMQ v5.3.1
-- ElasticSearch v7.7.28
-- Kibana v7.7.28
+- ElasticSearch v7.17.28
+- Kibana v7.17.28
 
 ## 整合Nacos
 - [点击查看详细文档](document/nacos/nacos.md)
@@ -24,8 +24,7 @@
 ### 方案二：整合Skywalking（功能强大且非侵入式）
 - [点击查看详细文档](document/skywalking/skywalking.md)
 ![img_4.png](document/skywalking/img_4.png)
- 
-  
+
 ## 整合Seata
 - [点击查看详细文档](document/seata/seata.md)
 

@@ -1,10 +1,14 @@
 
 版本说明：
-- ElasticSearch v7.7.28
-- Kibana v7.7.28
+- ElasticSearch v7.17.28
+- Kibana v7.17.28
 
-## 资源下载
+## 相关资源
 - [es v7.17.x版本文档](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/getting-started.html)
+- [logstash v7.17.x文档](https://www.elastic.co/guide/en/logstash/7.17/docker.html)
+- [kibana v7.17.x文档](https://www.elastic.co/guide/en/kibana/7.17/docker.html)
+- [es下载地址](https://www.elastic.co/downloads/elasticsearch)
+- [kibana下载地址]()https://www.elastic.co/downloads/kibana
 
 ## docker安装ELK
 ### 安装单节点es
