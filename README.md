@@ -1,12 +1,13 @@
-# mouse-cloud
-- Spring Cloud
-- Spring Cloud Alibaba
+# 🐭mouse-cloud 微服务&分布式全家桶
+- Spring Cloud v2021.0.4
+- Spring Cloud Alibaba v2021.0.4.0
 - Spring Cloud Gateway
+- Spring Boot v2.7.15
 - Zipkin + Sleuth
-- Nacos 2.2.0
-- Seata 2.3.0
-- Skywalking
-- RocketMQ 5.3.1
+- Nacos v2.2.0
+- Seata v2.3.0
+- Skywalking v8.7.0
+- RocketMQ v5.3.1
 
 ## 整合Nacos
 - [点击查看详细文档](document/nacos/nacos.md)
