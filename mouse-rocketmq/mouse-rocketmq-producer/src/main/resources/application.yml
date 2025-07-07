@@ -1,0 +1,16 @@
+
+spring:
+  application:
+    name: mouse-rocketmq-producer
+server:
+  port: 10007
+  servlet:
+    context-path: /${spring.application.name}
+#RocketMQ配置
+rocketmq:
+  name-server: 127.0.0.1:9876
+  producer:
+    group: mouse-group
+    send-message-timeout: 300000
+    tls-enable: false
+

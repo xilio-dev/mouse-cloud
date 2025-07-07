@@ -1,0 +1,14 @@
+
+spring:
+  application:
+    name: mouse-rocketmq-consumer
+server:
+  port: 10008
+  servlet:
+    context-path: /${spring.application.name}
+#RocketMQ配置
+rocketmq:
+  name-server: 127.0.0.1:9876
+
+
+

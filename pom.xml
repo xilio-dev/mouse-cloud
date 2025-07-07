@@ -16,6 +16,7 @@
         <module>mouse-storage</module>
         <module>mouse-business</module>
         <module>mouse-account</module>
+        <module>mouse-rocketmq</module>
     </modules>
     <name>${project.artifactId}</name>
     <properties>
