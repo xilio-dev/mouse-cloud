@@ -35,4 +35,4 @@
 
 ## 整合ELK
 - [点击查看详细文档](document/elk/ELK.md)
-![img.png](document/elk/img.png)
+![img_3.png](document/elk/img_3.png)

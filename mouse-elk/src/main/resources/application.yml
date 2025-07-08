@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: mouse-elk
+server:
+  port: 10008
+  servlet:
+    context-path: /${spring.application.name}
+
+

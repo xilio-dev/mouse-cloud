@@ -1,0 +1,29 @@
+[2025-07-08T09:05:04,033][INFO ][logstash.runner          ] Log4j configuration path used is: /usr/share/logstash/config/log4j2.properties
+[2025-07-08T09:05:04,037][INFO ][logstash.runner          ] Starting Logstash {"logstash.version"=>"7.17.28", "jruby.version"=>"jruby 9.2.20.1 (2.5.8) 2021-11-30 2a2962fbd1 OpenJDK 64-Bit Server VM 11.0.26+4 on 11.0.26+4 +indy +jit [linux-aarch64]"}
+[2025-07-08T09:05:04,038][INFO ][logstash.runner          ] JVM bootstrap flags: [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djdk.io.File.enableADS=true, -Djruby.compile.invokedynamic=true, -Djruby.jit.threshold=0, -Djruby.regexp.interruptible=true, -XX:+HeapDumpOnOutOfMemoryError, -Djava.security.egd=file:/dev/urandom, -Dlog4j2.isThreadContextMapInheritable=true, -Dls.cgroup.cpuacct.path.override=/, -Dls.cgroup.cpu.path.override=/]
+[2025-07-08T09:05:04,048][INFO ][logstash.settings        ] Creating directory {:setting=>"path.queue", :path=>"/usr/share/logstash/data/queue"}
+[2025-07-08T09:05:04,054][INFO ][logstash.settings        ] Creating directory {:setting=>"path.dead_letter_queue", :path=>"/usr/share/logstash/data/dead_letter_queue"}
+[2025-07-08T09:05:04,179][INFO ][logstash.agent           ] No persistent UUID file found. Generating new UUID {:uuid=>"6392d791-d39c-457c-ae05-317a0603273f", :path=>"/usr/share/logstash/data/uuid"}
+[2025-07-08T09:05:04,584][WARN ][logstash.monitoringextension.pipelineregisterhook] xpack.monitoring.enabled has not been defined, but found elasticsearch configuration. Please explicitly set `xpack.monitoring.enabled: true` in logstash.yml
+[2025-07-08T09:05:04,585][WARN ][deprecation.logstash.monitoringextension.pipelineregisterhook] Internal collectors option for Logstash monitoring is deprecated and may be removed in a future release.
+Please configure Metricbeat to monitor Logstash. Documentation can be found at:
+https://www.elastic.co/guide/en/logstash/current/monitoring-with-metricbeat.html
+[2025-07-08T09:05:04,727][WARN ][deprecation.logstash.codecs.plain] Relying on default value of `pipeline.ecs_compatibility`, which may change in a future major release of Logstash. To avoid unexpected changes when upgrading Logstash, please explicitly declare your desired ECS Compatibility mode.
+[2025-07-08T09:05:04,748][WARN ][deprecation.logstash.outputs.elasticsearch] Relying on default value of `pipeline.ecs_compatibility`, which may change in a future major release of Logstash. To avoid unexpected changes when upgrading Logstash, please explicitly declare your desired ECS Compatibility mode.
+[2025-07-08T09:05:04,875][INFO ][logstash.licensechecker.licensereader] Elasticsearch pool URLs updated {:changes=>{:removed=>[], :added=>[http://elasticsearch:9200/]}}
+[2025-07-08T09:05:04,983][INFO ][logstash.licensechecker.licensereader] Failed to perform request {:message=>"elasticsearch: Name or service not known", :exception=>Manticore::ResolutionFailure, :cause=>java.net.UnknownHostException: elasticsearch: Name or service not known}
+[2025-07-08T09:05:04,984][WARN ][logstash.licensechecker.licensereader] Attempted to resurrect connection to dead ES instance, but got an error {:url=>"http://elasticsearch:9200/", :exception=>LogStash::Outputs::ElasticSearch::HttpClient::Pool::HostUnreachableError, :message=>"Elasticsearch Unreachable: [http://elasticsearch:9200/][Manticore::ResolutionFailure] elasticsearch: Name or service not known"}
+[2025-07-08T09:05:04,997][INFO ][logstash.licensechecker.licensereader] Failed to perform request {:message=>"elasticsearch", :exception=>Manticore::ResolutionFailure, :cause=>java.net.UnknownHostException: elasticsearch}
+[2025-07-08T09:05:04,999][WARN ][logstash.licensechecker.licensereader] Marking url as dead. Last error: [LogStash::Outputs::ElasticSearch::HttpClient::Pool::HostUnreachableError] Elasticsearch Unreachable: [http://elasticsearch:9200/_xpack][Manticore::ResolutionFailure] elasticsearch {:url=>http://elasticsearch:9200/, :error_message=>"Elasticsearch Unreachable: [http://elasticsearch:9200/_xpack][Manticore::ResolutionFailure] elasticsearch", :error_class=>"LogStash::Outputs::ElasticSearch::HttpClient::Pool::HostUnreachableError"}
+[2025-07-08T09:05:05,002][WARN ][logstash.licensechecker.licensereader] Attempt to validate Elasticsearch license failed. Sleeping for 0.02 {:fail_count=>1, :exception=>"Elasticsearch Unreachable: [http://elasticsearch:9200/_xpack][Manticore::ResolutionFailure] elasticsearch"}
+[2025-07-08T09:05:05,028][ERROR][logstash.licensechecker.licensereader] Unable to retrieve license information from license server {:message=>"No Available connections"}
+[2025-07-08T09:05:05,039][ERROR][logstash.monitoring.internalpipelinesource] Failed to fetch X-Pack information from Elasticsearch. This is likely due to failure to reach a live Elasticsearch cluster.
+[2025-07-08T09:05:05,096][INFO ][logstash.config.source.local.configpathloader] No config files found in path {:path=>"/usr/share/logstash/pipeline/*"}
+[2025-07-08T09:05:05,100][ERROR][logstash.config.sourceloader] No configuration found in the configured sources.
+[2025-07-08T09:05:05,113][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600, :ssl_enabled=>false}
+[2025-07-08T09:05:10,243][INFO ][logstash.runner          ] Logstash shut down.
+[2025-07-08T09:05:10,248][FATAL][org.logstash.Logstash    ] Logstash stopped processing because of an error: (SystemExit) exit
+org.jruby.exceptions.SystemExit: (SystemExit) exit
+	at org.jruby.RubyKernel.exit(org/jruby/RubyKernel.java:747) ~[jruby-complete-9.2.20.1.jar:?]
+	at org.jruby.RubyKernel.exit(org/jruby/RubyKernel.java:710) ~[jruby-complete-9.2.20.1.jar:?]
+	at usr.share.logstash.lib.bootstrap.environment.<main>(/usr/share/logstash/lib/bootstrap/environment.rb:94) ~[?:?]
