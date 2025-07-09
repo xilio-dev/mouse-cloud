@@ -11,6 +11,7 @@
 - ElasticSearch v7.17.28
 - Kibana v7.17.28
 - Logstash v7.17.28
+- Canal v1.1.8
 
 ## 整合Nacos
 - [点击查看详细文档](document/nacos/nacos.md)
@@ -37,3 +38,7 @@
 ## 整合ELK
 - [点击查看详细文档](document/elk/ELK.md)
 ![img_3.png](document/elk/img_3.png)
+
+## 整合Canal
+- [点击查看详细文档](document/canal/canal.md)
+![img.png](document/canal/img.png)
