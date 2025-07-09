@@ -2,6 +2,7 @@
 
 - ElasticSearch v7.17.28
 - Kibana v7.17.28
+- Logstash v7.17.28
 
 ## 相关资源
 
@@ -52,7 +53,7 @@ docker run \
 
 ### 安装logstash
 
-先在主机目录下`/home/admin/data/logstash`(自定义)新建一个文件`logstash.conf`
+先在主机目录下`/home/admin/data/logstash`(根据自己的电脑自个儿定义)新建一个文件`logstash.conf`
 并添加如下内容，如果内容为空将会报错，这是一个坑（[error.log](error.log)）
 
 ````shell

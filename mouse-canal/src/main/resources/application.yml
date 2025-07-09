@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: mouse-canal
+server:
+  port: 10009
+  servlet:
+    context-path: /${spring.application.name}
+
+

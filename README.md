@@ -10,6 +10,7 @@
 - RocketMQ v5.3.1
 - ElasticSearch v7.17.28
 - Kibana v7.17.28
+- Logstash v7.17.28
 
 ## 整合Nacos
 - [点击查看详细文档](document/nacos/nacos.md)

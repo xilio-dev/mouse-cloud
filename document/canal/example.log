@@ -1,0 +1,21 @@
+2025-07-09 16:38:31.659 [main] INFO  c.a.otter.canal.instance.spring.CanalInstanceWithSpring - start CannalInstance for 1-example
+2025-07-09 16:38:33.010 [main] WARN  c.a.o.canal.parse.inbound.mysql.dbsync.LogEventConvert - --> init table filter : ^.*\..*$
+2025-07-09 16:38:33.011 [main] WARN  c.a.o.canal.parse.inbound.mysql.dbsync.LogEventConvert - --> init table black filter : ^mysql\.slave_.*$
+2025-07-09 16:38:33.017 [main] INFO  c.a.otter.canal.instance.core.AbstractCanalInstance - start successful....
+2025-07-09 16:38:33.544 [destination = example , address = /127.0.0.1:3306 , EventParser] WARN  c.a.o.c.p.inbound.mysql.rds.RdsBinlogEventParserProxy - ---> begin to find start position, it will be long time for reset or first position
+2025-07-09 16:38:33.545 [destination = example , address = /127.0.0.1:3306 , EventParser] WARN  c.a.o.c.p.inbound.mysql.rds.RdsBinlogEventParserProxy - prepare to find start position just show master status
+2025-07-09 16:38:33.550 [destination = example , address = /127.0.0.1:3306 , EventParser] ERROR c.a.o.c.p.inbound.mysql.rds.RdsBinlogEventParserProxy - dump address /127.0.0.1:3306 has an error, retrying. caused by
+com.alibaba.otter.canal.parse.exception.CanalParseException: command : 'show binary log status' has an error!
+Caused by: java.io.IOException: ErrorPacket [errorNumber=1227, fieldCount=-1, message=Access denied; you need (at least one of) the SUPER, REPLICATION CLIENT privilege(s) for this operation, sqlState=42000, sqlStateMarker=#]
+ with command: show binary log status
+	at com.alibaba.otter.canal.parse.driver.mysql.MysqlQueryExecutor.query(MysqlQueryExecutor.java:61)
+	at com.alibaba.otter.canal.parse.inbound.mysql.MysqlConnection.query(MysqlConnection.java:121)
+	at com.alibaba.otter.canal.parse.inbound.mysql.MysqlEventParser.findEndPosition(MysqlEventParser.java:676)
+	at com.alibaba.otter.canal.parse.inbound.mysql.MysqlEventParser.findEndPositionWithMasterIdAndTimestamp(MysqlEventParser.java:379)
+	at com.alibaba.otter.canal.parse.inbound.mysql.MysqlEventParser.findStartPositionInternal(MysqlEventParser.java:438)
+	at com.alibaba.otter.canal.parse.inbound.mysql.MysqlEventParser.findStartPosition(MysqlEventParser.java:356)
+	at com.alibaba.otter.canal.parse.inbound.AbstractEventParser$1.run(AbstractEventParser.java:186)
+	at java.lang.Thread.run(Thread.java:748)
+2025-07-09 16:38:33.552 [destination = example , address = /127.0.0.1:3306 , EventParser] ERROR com.alibaba.otter.canal.common.alarm.LogAlarmHandler - destination:example[com.alibaba.otter.canal.parse.exception.CanalParseException: command : 'show binary log status' has an error!
+Caused by: java.io.IOException: ErrorPacket [errorNumber=1227, fieldCount=-1, message=Access denied; you need (at least one of) the SUPER, REPLICATION CLIENT privilege(s) for this operation, sqlState=42000, sqlStateMarker=#]
+ with command: show binary log status

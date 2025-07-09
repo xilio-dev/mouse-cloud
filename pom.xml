@@ -18,6 +18,7 @@
         <module>mouse-account</module>
         <module>mouse-rocketmq</module>
         <module>mouse-elk</module>
+        <module>mouse-canal</module>
     </modules>
     <name>${project.artifactId}</name>
     <properties>
