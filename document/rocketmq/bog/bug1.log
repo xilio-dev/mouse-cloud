@@ -1,0 +1,22 @@
+ Caused by: org.apache.rocketmq.client.exception.MQClientException: send message Exception
+For more information, please visit the url, https://rocketmq.apache.org/docs/bestPractice/06FAQ
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendMessageInTransaction(DefaultMQProducerImpl.java:1439)
+	at org.apache.rocketmq.client.producer.TransactionMQProducer.sendMessageInTransaction(TransactionMQProducer.java:89)
+	at org.apache.rocketmq.spring.core.RocketMQTemplate.sendMessageInTransaction(RocketMQTemplate.java:1186)
+	... 8 more
+Caused by: org.apache.rocketmq.client.exception.MQClientException: Send [3] times, still failed, cost [7]ms, Topic: springTransTopic, BrokersSent: [broker-a, broker-a, broker-a]
+See https://rocketmq.apache.org/docs/bestPractice/06FAQ for further details.
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:859)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1564)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1505)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendMessageInTransaction(DefaultMQProducerImpl.java:1437)
+	... 10 more
+Caused by: org.apache.rocketmq.client.exception.MQBrokerException: CODE: 14  DESC: service not available now. It may be caused by one of the following reasons: the broker's disk is full [CL:  0.91 CQ:  0.91 INDEX:  0.91], messages are put to the slave, message store has been shut down, etc. BROKER: 192.168.0.151:10911
+For more information, please visit the url, https://rocketmq.apache.org/docs/bestPractice/06FAQ
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.processSendResponse(MQClientAPIImpl.java:828)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.sendMessageSync(MQClientAPIImpl.java:663)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.sendMessage(MQClientAPIImpl.java:645)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.sendMessage(MQClientAPIImpl.java:589)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendKernelImpl(DefaultMQProducerImpl.java:1052)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:776)
+	... 13 more
