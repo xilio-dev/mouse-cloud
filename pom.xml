@@ -19,6 +19,7 @@
         <module>mouse-rocketmq</module>
         <module>mouse-elk</module>
         <module>mouse-canal</module>
+        <module>mouse-redis</module>
     </modules>
     <name>${project.artifactId}</name>
     <properties>

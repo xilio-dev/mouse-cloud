@@ -1,0 +1,25 @@
+server:
+  port: 10009
+  servlet:
+    context-path: /${spring.application.name}
+spring:
+  application:
+    name: mouse-redis
+  redis:
+    cluster:
+      nodes: 127.0.0.1:7001,127.0.0.1:7002,127.0.0.1:7003,127.0.0.1:7004,127.0.0.1:7005,127.0.0.1:7006
+      max-redirects: 3
+    connect-timeout: 5000ms
+    lettuce:
+      cluster:
+        refresh:
+          adaptive: true
+          period: 200ms
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 4
+        max-wait: 50ms
+      shutdown-timeout: 100ms # 应用关闭时等待连接释放时间
+    timeout: 300ms #命令超时时间
+
