@@ -48,7 +48,9 @@
 ## 整合Dubbo
 
 ## 整合RocketMQ
-
+- [点击查看详细入门文档](document/rocketmq/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md)
+- [代码案例](mouse-rocketmq)
+![start.png](document/rocketmq/start.png)
 # 整个Redis
 - [点击查看Redis-Cluster高可用集群搭建](document/redis/Redis-Cluster%E9%AB%98%E5%8F%AF%E7%94%A8%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA.md)
 ![img_1.png](document/redis/_img/img_1.png)

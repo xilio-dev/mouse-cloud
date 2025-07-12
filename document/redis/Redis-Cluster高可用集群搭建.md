@@ -40,7 +40,7 @@ done
 
 ```
 
-查看对应的端口是否正常监听
+查看对应的端口是否正常监听（[spd下载](https://github.com/xilio-dev/spd)）
 
 ```shell
 root@xilio redis % spd 7001-7006   
