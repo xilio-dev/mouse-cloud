@@ -29,7 +29,6 @@ appendonly yes
 EOF
 done
 ```
-
 启动所有redis节点服务
 
 ```shell
@@ -39,7 +38,8 @@ for port in {7001..7006}; do
 done
 
 ```
-
+上面几个步骤执行以后会生成如下文件将和文件（有3个是自己写的脚本）
+![img_4.png](_img/img_4.png)
 查看对应的端口是否正常监听（[spd下载](https://github.com/xilio-dev/spd)）
 
 ```shell
