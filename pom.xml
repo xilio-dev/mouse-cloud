@@ -21,6 +21,7 @@
         <module>mouse-canal</module>
         <module>mouse-redis</module>
         <module>mouse-zookeeper</module>
+        <module>mouse-logger</module>
     </modules>
     <name>${project.artifactId}</name>
     <properties>

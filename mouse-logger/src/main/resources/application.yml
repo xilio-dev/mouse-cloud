@@ -1,0 +1,9 @@
+
+spring:
+  application:
+    name: mouse-logger
+server:
+  port: 10001
+  servlet:
+    context-path: /mouse-logger
+
