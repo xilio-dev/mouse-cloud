@@ -14,6 +14,7 @@
 - Canal v1.1.8
 - Dubbo
 - Redis 7.2.7
+- Zookeeper v3.9.3
 
 ## 整合Nacos
 - [点击查看详细文档](document/nacos/nacos.md)
@@ -54,3 +55,6 @@
 # 整个Redis
 - [点击查看Redis-Cluster高可用集群搭建](document/redis/Redis-Cluster%E9%AB%98%E5%8F%AF%E7%94%A8%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA.md)
 ![img_1.png](document/redis/_img/img_1.png)
+
+## 整合Zookeeper
+- [点击查看Zookeeper集群环境搭建](document/zookeeper/zookeeper%E9%9B%86%E7%BE%A4%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md)
