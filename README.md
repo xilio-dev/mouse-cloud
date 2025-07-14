@@ -15,6 +15,7 @@
 - Dubbo
 - Redis 7.2.7
 - Zookeeper v3.9.3
+- ActiveMQ v5.19.0
 
 ## 整合Nacos
 - [点击查看详细文档](document/nacos/nacos.md)
@@ -62,3 +63,8 @@
 ## 整合Prometheus
 - [Prometheus环境搭建](document/monitor/prometheus%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md)
 ![img.png](document/monitor/img.png)
+
+## 整合ActiveMQ
+- [点击查看ActiveMQ入门文档](document/activemq/activemq.md)
+- [入门代码案例](mouse-activemq)
+![img.png](document/activemq/img.png)

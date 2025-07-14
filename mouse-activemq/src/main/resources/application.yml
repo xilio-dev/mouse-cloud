@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: mouse-activemq
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: admin
+    in-memory: false  # 禁用内存模式
+    packages.trust-all: true  # 允许反序列化所有类
+server:
+  port: 10011
+  servlet:
+    context-path: /mouse-activemq
+
