@@ -58,3 +58,7 @@
 
 ## 整合Zookeeper
 - [点击查看Zookeeper集群环境搭建](document/zookeeper/zookeeper%E9%9B%86%E7%BE%A4%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md)
+
+## 整合Prometheus
+- [Prometheus环境搭建](document/monitor/prometheus%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md)
+![img.png](document/monitor/img.png)
