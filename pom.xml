@@ -23,6 +23,7 @@
         <module>mouse-zookeeper</module>
         <module>mouse-logger</module>
         <module>mouse-activemq</module>
+        <module>mouse-kafka</module>
     </modules>
     <name>${project.artifactId}</name>
     <properties>

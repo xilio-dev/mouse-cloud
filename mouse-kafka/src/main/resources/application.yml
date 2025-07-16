@@ -1,0 +1,24 @@
+server:
+  port: 10013
+  servlet:
+    context-path: /${spring.application.name}
+spring:
+  application:
+    name: mouse-kafka
+  kafka:
+    bootstrap-servers: localhost:9092 #kafka服务器地址,多个地址集群用逗号隔开
+    producer:
+      retries: 3 #设置大于0的值将使客户端重新发送任何数据，以避免数据丢失。生产者在重试发送消息的过程中重试增加消息间隔。
+      batch-size: 16384 #当将多个记录发送到同一分区时，生产者将尝试将记录批处理为更有效的请求。这减轻了网络和kafka主机的负担。
+      buffer-memory: 33554432 #该参数用于控制生产者批量发送消息时每次发送的批次数据大小，默认16384B
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer #key序列化
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer #value序列化
+    consumer:
+      group-id: my-group #消费者组ID
+      auto-offset-reset: earliest #earliest:当各分区下有已提交的offset时，从提交的offset开始消费；无提交的offset时，从头开始消费
+      max-poll-records: 100 #每次拉取的最大记录数
+      enable-auto-commit: false #时候自动提交offset
+      auto-commit-interval: 1000 #自动提交offset的时间间隔
+    listener:
+      ack-mode: record
+
