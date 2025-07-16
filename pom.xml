@@ -24,6 +24,7 @@
         <module>mouse-logger</module>
         <module>mouse-activemq</module>
         <module>mouse-kafka</module>
+        <module>mouse-shardingsphere</module>
     </modules>
     <name>${project.artifactId}</name>
     <properties>

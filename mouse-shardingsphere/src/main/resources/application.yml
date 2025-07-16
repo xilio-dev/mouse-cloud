@@ -1,0 +1,9 @@
+
+spring:
+  application:
+    name: mouse-storage
+server:
+  port: 10012
+  servlet:
+    context-path: /${spring.application.name}
+
